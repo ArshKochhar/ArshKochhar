@@ -40,7 +40,7 @@
 }
 
 #headingGroup h1 {
-    font-weight: 100;
+    font-weight: 180;
     font-size: 4rem;
 }
 
@@ -51,7 +51,7 @@
 
 @media (max-width: 1200px) {
     #headingGroup h1 {
-        font-weight: 100;
+        font-weight: 150;
         font-size: 3rem;
     }
     .blurb h2 {
@@ -101,21 +101,47 @@ h2.connect {
   font-size: 2em;
 }
 
-img.linkedin  {
-  display: flex;
-  position: absolute;
-  width: 2%;
-  min-width: 1%;
-  bottom: 225px;
-  height: auto;
-  filter: invert(42%) sepia(100%) saturate(700%) hue-rotate(-190deg)
-    brightness(50%) contrast(0.9);
-  /* filter: invert(40%) sepia(100%) saturate(600%) hue-rotate(-50deg) brightness(60%) contrast(0.8); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+  background-color: #111;
 }
 
-img.linkedin img:hover {
-  filter: invert(40%) sepia(100%) saturate(600%) hue-rotate(-50deg)
-    brightness(40%) contrast(0.8);
-  transition: transform 0.3s;
-  transform: scale(1.1);
+.title {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 82vh;
+  letter-spacing: 1px;
 }
+
+h1.projects {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: .75;
+  margin: 10px 0;
+}
+h1.hello {
+  background-image: url(https://media.giphy.com/media/WYsDOuRz0dcKQ/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: .75;
+  margin: 10px 0;
+}
+
+
+
+
+
