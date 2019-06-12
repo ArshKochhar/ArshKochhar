@@ -21,6 +21,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Custom JavaScript -->
     <script type="text/javascript" src="javastyles.js"></script>
@@ -85,8 +86,31 @@
 
     <h2 class="connect">Let's Connect!.</h2> <br>
 
+<!-- Connect toggle -->
 
+    <div class="share">
+        <div class="toggle"></div>
+        <ul>
+            <li><a href="https://www.facebook.com/arsh.kochhar.9" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/arsh-kochhar-a75ba0165/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/ArshKochhar" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="mailto:arshkochhar15@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
 
+        </ul>
+    </div>
+
+<!-- JavaScript that allows the share button to toggle and reveal the list items -->
+
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('ul').toggleClass('active')
+
+            })
+        })
+    </script> 
         </div>
     </div>
 
@@ -106,10 +130,12 @@
             <div class="col-md-6 text-center order-1 order-md-2">
                 <div class="row justify-content-center">
                     <div id="firstcont" class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-                        <h2 class="heading" id="intro">COMPUTER ENGINEERING</h2>
-                        <img src="imgs/compicon.png" alt="" class="d-none d-lg-inline">
+                        <h2 class="heading" id="intro">About Me</h2>
+                        <img src="imgs/compicon.png" alt="" class="d-none d-lg-inline"> 
 
-                        <p class="para"> <br>I am a second year <b>Computer Engineering</b> student attending Queen's Univeristy.  I was <i>1 of 50</i> students admitted into the <b>ECEi</b> (Electrical and Computer Engineering Innovation stream) program at Queen's. It gave me the opportunity to get a headstart to more of the technical computing focused courses. Through this program I am given the opportunity to take a few courses from the very reknowned <b>Smith Scool of Business</b> in order to indulge myself into the world of commerce and what it takes to be a thriving industrialist and a successful entrepreneur.</p>
+                        <p><br></p>
+
+                        <p class="para"> I am a second year <b>Computer Engineering</b> student attending Queen's Univeristy.  I was <i>1 of 50</i> students admitted into the <b>ECEi</b> (Electrical and Computer Engineering Innovation stream) program at Queen's. It gave me the opportunity to get a headstart to more of the technical computing focused courses. Through this program I am given the opportunity to take a few courses from the very reknowned <b>Smith Scool of Business</b> in order to indulge myself into the world of commerce and what it takes to be a thriving industrialist and a successful entrepreneur.</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +166,8 @@
                     <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                         <h2 class="heading">Technology Executive <br><br></h2>
                         <img src="imgs/techicon.png" alt="" class="d-none d-lg-inline">
-                        <p class="para"><br><i>Executive at “one of the longest-running and best-known undergraduate business plan competitions in the world” </i> <b> <br>~ The New York Times</b> <br>
+                        <p><br></p>
+                        <p class="para"><i>Executive at “one of the longest-running and best-known undergraduate business plan competitions in the world” </i> <b> <br>~ The New York Times</b> <br>
 
                         My role is to oversee all aspects of IT-related project for the QEC; including and not limited to the website and coordination of tech on the weekend of the competition. I am in charge of redesigning the website using HTML CSS and JavaScript, and developing an app (through flutter for both IOS and Android) meant to make the logistics of the event seemless. I also collaborate to develop and manage new online business plan submission platform and Work closely with the publications and the outreach team to innovate the website design
                         </p>

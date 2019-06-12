@@ -79,7 +79,7 @@ h2.heading{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 99
+    
 }
 
 html,body {
@@ -101,6 +101,154 @@ h2.connect {
   font-size: 2em;
 }
 
+div .para
+{
+  background-color: black;
+  margin-left: -30px;
+}
+
+/*Designing the Share button*/
+
+.share{
+  position: absolute;
+  top: 120%;
+  left: 50%;   
+  transform: translate(-50%,-50%); 
+  width:50px;
+  height: 50px;
+  
+} 
+
+.share ul{
+   position: relative;
+   margin-bottom: 0; 
+   padding:0;
+   width: 100%;
+   height:100%;
+}
+
+h1.hello {
+  background-image: url(https://media.giphy.com/media/WYsDOuRz0dcKQ/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: .75;
+  margin: 10px 0;
+}
+
+/*designing each seperate social media icon button and adding the transitioon timings*/
+
+.share ul li a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  color: #262626;
+  transition: 0.5s;
+
+  /*Transition upon hover/once the initial toggle is triggered*/
+
+}
+.share ul li a:hover{
+
+  color: #fff;
+  background:#2196f3;
+  
+
+
+}
+.share ul li{
+  position:absolute;
+  top:0;
+  left:0;
+  list-style: none;
+  width: 100%;
+  height:100%;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+  transform: scale(0.95); 
+  border-radius: 10px; 
+}
+
+/*adding the location around the main share button where all the social media icons will be located*/
+
+.share ul.active li:nth-child(1) {
+
+ top:  -100%;
+ left: -100%;
+ transition-delay: 0.2s;
+
+}
+.share ul.active li:nth-child(2) {
+
+ top: -100%;
+ left: 100% ;
+ transition-delay: 0.4s;
+
+}
+.share ul.active li:nth-child(3) {
+
+ top:  100%;
+ left: 100% ;
+ transition-delay: 0.6s;
+
+}
+.share ul.active li:nth-child(4) {
+
+ top:  100%;
+ left: -100% ;
+ transition-delay: 0.8s;
+}
+
+/* The Toggle button (share and cross), making it rounded and slightly larger*/
+.toggle{
+  background-image: url(https://media.giphy.com/media/WYsDOuRz0dcKQ/giphy.gif);
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  transform: scale(0.98);
+  overflow:hidden;
+  border-radius: 10px; 
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+/*Before: when the share button is visible and the icons are all hidden*/
+
+.toggle:before{
+  content: '\f1e0';
+  font-family: fontAwesome;
+  color: #262626;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+/*when the toggle has been activated, and all the icons are visble, the toggle fontAwesome chanegs to the cross*/
+
+.toggle.active:before{
+  content: '\f00d';
+}
+
+
+/*Projects Page*/
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
   background-color: #111;
@@ -120,17 +268,6 @@ body {
 
 h1.projects {
   background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-  background-size: cover;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  text-transform: uppercase;
-  font-size: 120px;
-  line-height: .75;
-  margin: 10px 0;
-}
-h1.hello {
-  background-image: url(https://media.giphy.com/media/WYsDOuRz0dcKQ/giphy.gif);
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
