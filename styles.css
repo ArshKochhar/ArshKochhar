@@ -64,13 +64,13 @@ h1.line {
 }
 
 p.para{
-    color:#EA1C2C;
+    color:white;
     margin-left: -17%;
     margin-right: -17%;
 }
 
 h2.heading{
-    color:white;
+    color:red;
     font-weight:200;
     font-size: 2em;
 }
@@ -103,7 +103,7 @@ h2.connect {
 
 div .para
 {
-  background-color: black;
+  background-color:;
   margin-left: -30px;
 }
 
@@ -262,7 +262,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 82vh;
+  height: 30vh;
   letter-spacing: 1px;
 }
 
