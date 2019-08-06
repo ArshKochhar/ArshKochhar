@@ -75,6 +75,10 @@ h2.heading{
     font-size: 2em;
 }
 
+section.sec1{
+  color: red;
+}
+
 #particles-js canvas{
     position: absolute;
     width: 100%;
